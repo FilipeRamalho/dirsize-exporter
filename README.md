@@ -1,9 +1,12 @@
+
+
 # prometheus-dirsize-exporter
 Prometheus exporter for getting the directory size of a directory or its subdirectories.
 This can be useful for directories like `/var/lib/docker/volumes` to see which volumes take up the most space.
 
 ## Configuration
 The exporter is configured through the file `configs/appSettings.json` under the path of the binary (`/app/configs/appSettings.json` in the docker container).
+Environment variables can override the JSON configuration values.
 
 Full configuration example:
 ```javascript
